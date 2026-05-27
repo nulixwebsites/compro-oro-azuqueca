@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://comprooroazuqueca.com/</loc>
+    <lastmod>2026-05-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://comprooroazuqueca.com/assets/img-20260520-wa0003__mpffgb99crq4.jpg</image:loc>
+      <image:title>Fachada de Compro Oro Azuqueca</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://comprooroazuqueca.com/assets/img-20260520-wa0001__mpffgb98c9n8.jpg</image:loc>
+      <image:title>Interior de Compro Oro Azuqueca</image:title>
+    </image:image>
+  </url>
+</urlset>
