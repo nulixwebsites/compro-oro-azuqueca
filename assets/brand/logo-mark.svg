@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Compro Oro Azuqueca">
+  <!-- Clásica & Confiable — sello CO: crema, dorado antiguo, burdeos -->
+  <circle cx="256" cy="256" r="248" fill="#F6F1E6"/>
+  <circle cx="256" cy="256" r="226" fill="none" stroke="#D4AF37" stroke-width="10"/>
+  <circle cx="256" cy="256" r="204" fill="none" stroke="#D4AF37" stroke-width="3"/>
+
+  <!-- fleur-de-lis arriba -->
+  <g fill="#D4AF37" transform="translate(256,86)">
+    <path d="M0,-26 C7,-14 10,-4 6,6 C16,0 20,-10 18,-20 C28,-12 30,2 22,12 C14,22 4,24 0,32 C-4,24 -14,22 -22,12 C-30,2 -28,-12 -18,-20 C-20,-10 -16,0 -6,6 C-10,-4 -7,-14 0,-26 Z"/>
+    <rect x="-26" y="34" width="52" height="4" rx="2"/>
+  </g>
+  <!-- fleur-de-lis abajo (espejo) -->
+  <g fill="#D4AF37" transform="translate(256,426) scale(1,-1)">
+    <path d="M0,-26 C7,-14 10,-4 6,6 C16,0 20,-10 18,-20 C28,-12 30,2 22,12 C14,22 4,24 0,32 C-4,24 -14,22 -22,12 C-30,2 -28,-12 -18,-20 C-20,-10 -16,0 -6,6 C-10,-4 -7,-14 0,-26 Z"/>
+    <rect x="-26" y="34" width="52" height="4" rx="2"/>
+  </g>
+
+  <!-- monograma CO -->
+  <text x="256" y="318" text-anchor="middle"
+        font-family="Playfair Display, Georgia, 'Times New Roman', serif"
+        font-size="185" font-weight="600" letter-spacing="2"
+        fill="#7A1E2D">CO</text>
+</svg>
