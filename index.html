@@ -18,14 +18,17 @@
   <meta property="og:description" content="Compramos oro, plata, joyas y relojes en Azuqueca de Henares. Tasación gratuita, pago inmediato y los mejores precios. 4.7★ Google.">
   <meta property="og:url" content="https://comprooroazuqueca.com/">
   <meta property="og:image" content="https://comprooroazuqueca.com/assets/brand/og.png">
+  <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Compro Oro Azuqueca · Tradición, honestidad y experiencia">
 
   <!-- Twitter card (some clients don't read OG fallback) -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Compro Oro Azuqueca · Tasación gratis y pago inmediato">
   <meta name="twitter:description" content="Compramos oro, plata, joyas y relojes en Azuqueca de Henares. Tasación gratuita, pago inmediato y los mejores precios. 4.7★ Google.">
   <meta name="twitter:image" content="https://comprooroazuqueca.com/assets/brand/og.png">
+  <meta name="twitter:image:alt" content="Compro Oro Azuqueca · Tradición, honestidad y experiencia">
 
   <!-- Google Search Console verification: paste the meta tag you get from GSC here when activating the property -->
   <!-- <meta name="google-site-verification" content="PASTE_HERE"> -->
@@ -38,9 +41,17 @@
         type="image/webp"
         fetchpriority="high">
 
-  <!-- Favicon — sello CO (Clásica & Confiable) -->
+  <!-- Favicon — sello CO (Clásica & Confiable). SVG for modern browsers,
+       PNG + ICO fallbacks for SERPs and legacy clients, web manifest for install. -->
   <link rel="icon" type="image/svg+xml" href="assets/brand/logo-mark.svg">
-  <link rel="apple-touch-icon" href="assets/brand/apple-touch.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="apple-mobile-web-app-title" content="Compro Oro Azuqueca">
+  <meta name="msapplication-TileColor" content="#07070a">
+  <meta name="msapplication-TileImage" content="assets/brand/icon-192.png">
 
   <!-- LocalBusiness structured data — local SEO -->
   <script type="application/ld+json">
@@ -48,7 +59,8 @@
     "@context": "https://schema.org",
     "@type": "JewelryStore",
     "name": "Compro Oro Azuqueca",
-    "image": "https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1200&auto=format&fit=crop&q=80",
+    "image": "https://comprooroazuqueca.com/assets/brand/og.png",
+    "logo": "https://comprooroazuqueca.com/assets/brand/logo-512.png",
     "url": "https://comprooroazuqueca.com/",
     "telephone": "+34642602238",
     "openingHoursSpecification": [
@@ -122,9 +134,9 @@
   <!-- Nav -->
   <nav class="fixed w-full z-40 bg-void/85 backdrop-blur-md border-b border-gold/10">
     <div class="max-w-5xl mx-auto px-5 sm:px-6 flex items-center justify-between h-14 sm:h-16">
-      <a href="#" class="flex items-center gap-2.5 font-serif text-lg sm:text-xl text-gold tracking-wide" aria-label="Compro Oro Azuqueca, inicio">
-        <img src="assets/brand/logo-mark.svg" alt="" width="36" height="36" class="w-8 h-8 sm:w-9 sm:h-9 rounded-full">
-        <span>Compro Oro Azuqueca</span>
+      <a href="#" class="flex items-center gap-2 sm:gap-2.5 text-gold min-w-0" aria-label="Compro Oro Azuqueca, inicio">
+        <img src="assets/brand/logo-mark.svg" alt="" width="40" height="40" class="w-9 h-9 sm:w-10 sm:h-10 shrink-0">
+        <span class="font-serif text-base sm:text-xl tracking-wide leading-none truncate">Compro Oro Azuqueca</span>
       </a>
       <div class="hidden md:flex gap-10 text-xs tracking-[.18em] text-gray-500 uppercase">
         <a href="#compramos" class="hover:text-gold transition-colors">Qué compramos</a>
@@ -341,10 +353,10 @@
   <!-- FOOTER -->
   <footer class="bg-void-800 border-t border-gold/10 py-10 sm:py-12 px-5 sm:px-6 pb-24 sm:pb-12">
     <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-6">
-      <div class="flex items-center gap-3">
-        <img src="assets/brand/logo-mark.svg" alt="" width="44" height="44" class="w-11 h-11 rounded-full shrink-0">
-        <div>
-          <p class="font-serif text-2xl text-gold">Compro Oro Azuqueca</p>
+      <div class="flex items-center gap-3 sm:gap-4">
+        <img src="assets/brand/logo-mark.svg" alt="" width="52" height="52" class="w-12 h-12 sm:w-14 sm:h-14 shrink-0">
+        <div class="text-left">
+          <p class="font-serif text-xl sm:text-2xl text-gold leading-tight">Compro Oro Azuqueca</p>
           <p class="text-xs text-gray-500 mt-1">Blvr. de las Acacias, 6 · Azuqueca de Henares</p>
         </div>
       </div>
