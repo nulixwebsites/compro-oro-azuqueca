@@ -30,9 +30,7 @@
 .hero-pad{padding-bottom:clamp(2.5rem,7vw,6.5rem)}
 /* --- polish detailing --- */
 /* accurate fractional star rating (Google amber) */
-.stars{position:relative;display:inline-block;font-size:1rem;line-height:1;letter-spacing:2px;font-family:Arial,sans-serif}
-.stars-bg{color:#e3d4b4}
-.stars-fg{color:#fbbc04;position:absolute;left:0;top:0;white-space:nowrap;overflow:hidden;width:var(--pct,100%)}
+.stars{display:inline-block;font-size:1rem;line-height:1;letter-spacing:2px;font-family:Arial,sans-serif;background-image:linear-gradient(90deg,#f5a623 var(--pct,100%),#cdbb98 var(--pct,100%));-webkit-background-clip:text;background-clip:text;color:transparent}
 .g-logo{height:18px;width:auto;display:block}
 /* button micro-interaction */
 .btn-lift{transition:transform .2s cubic-bezier(.2,.8,.2,1),box-shadow .2s,background-color .15s,border-color .15s,color .15s;will-change:transform}
