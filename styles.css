@@ -3,3 +3,28 @@
 .text-wine{color:#a32a3b}
 .border-wine{border-color:#84212f}
 .bg-wine{background-color:#6e101e}
+
+/* --- brand-refine: cream paper + wine accent elevation --- */
+.section-cream{background:radial-gradient(120% 100% at 50% 0%,#f7f0e4 0%,#efe4d2 100%);color:#241c15;position:relative}
+.section-cream::before,.section-cream::after{content:"";position:absolute;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,rgba(132,33,47,.45) 30%,rgba(212,175,55,.55) 50%,rgba(132,33,47,.45) 70%,transparent)}
+.section-cream::before{top:0}.section-cream::after{bottom:0}
+.text-ink{color:#241c15}
+.text-ink-soft{color:#5e5246}
+.text-ink-faint{color:#8a7d6e}
+.cream-card{border-top:1px solid rgba(132,33,47,.35);transition:border-color .2s}
+.cream-card:hover{border-color:rgba(132,33,47,.7)}
+.eyebrow-tick{display:inline-block;width:1.6rem;height:1px;background:#84212f;vertical-align:middle;margin-right:.75rem;margin-top:-.125rem}
+.fluid-display{font-size:clamp(2.85rem,8.5vw,6rem);line-height:.95}
+.elevate-card{transition:transform .25s cubic-bezier(.2,.8,.2,1),border-color .25s}
+.elevate-card:hover{transform:translateY(-3px)}
+@media (prefers-reduced-motion:reduce){.elevate-card:hover{transform:none}}
+/* generous, fluid negative space */
+.section-pad{padding-top:clamp(4.75rem,10vw,9rem);padding-bottom:clamp(4.75rem,10vw,9rem)}
+.section-head{margin-bottom:clamp(2.75rem,6vw,5rem)}
+.lead-measure{max-width:34rem}
+/* wine on dark cards (no layout shift) */
+.card-dark{transition:box-shadow .25s,transform .25s cubic-bezier(.2,.8,.2,1)}
+.card-dark:hover{box-shadow:inset 3px 0 0 #84212f}
+.text-gold-deep{color:#a8842a}
+/* hero rhythm */
+.hero-pad{padding-bottom:clamp(2.5rem,7vw,6.5rem)}
