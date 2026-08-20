@@ -594,6 +594,6 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 .visit-info-row dt{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#8A7A66;margin-bottom:.4rem}
 .visit-info-row dd{margin:0;font-size:1.0625rem;line-height:1.5}
 .visit-info-row dd span{display:block}
-.visit-hours{display:grid;grid-template-columns:auto 1fr;column-gap:1rem;row-gap:.3rem;font-size:.875rem;max-width:19rem}
-.visit-hours span:nth-child(odd){color:#8A7A66}
-.visit-hours span:nth-child(even){text-align:right}
+.visit-hours{display:grid;grid-template-columns:auto auto;column-gap:1.5rem;row-gap:.45rem;font-size:.875rem}
+.visit-hours span:nth-child(odd){min-width:7.5rem}
+.visit-hours span:nth-child(even){font-variant-numeric:tabular-nums}
