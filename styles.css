@@ -536,13 +536,20 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 .trust-tile h3{color:#fff;font-weight:600;margin-bottom:.35rem}
 .trust-tile p{font-size:.875rem;color:#9ca3af;line-height:1.6;margin:0}
 
+.hero-section{padding-top:5.5rem;padding-bottom:3.5rem}
+@media (min-width:640px){.hero-section{padding-top:8rem;padding-bottom:6rem}}
+.hero-section .lead-measure{margin-bottom:1.5rem}
+.hero-note{margin-top:.75rem}
+
 /* Homepage hero photo frame — the real storefront photo shown as a genuine
    photograph (bordered card), not stretched full-bleed behind text */
 .hero-photo-frame{
   position:relative;border-radius:1rem;overflow:hidden;
   border:1px solid rgba(198,145,46,.2);
   box-shadow:0 30px 70px -30px rgba(0,0,0,.6);
+  margin-top:1.5rem;
 }
+@media (min-width:640px){.hero-photo-frame{margin-top:2.5rem}}
 .hero-photo-frame img{display:block;width:100%;height:auto;aspect-ratio:16/8;object-fit:cover}
 .hero-photo-tag{
   position:absolute;left:1.125rem;bottom:1.125rem;z-index:2;
