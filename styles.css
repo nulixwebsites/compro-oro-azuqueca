@@ -251,7 +251,7 @@ body{background:#FAF6EC;color:#1C1712;-webkit-font-smoothing:antialiased}
 .cat-card:hover{box-shadow:0 4px 10px rgba(28,23,18,.06),0 18px 36px -14px rgba(28,23,18,.22);border-color:rgba(132,23,42,.26);transform:translateY(-3px)}
 .cat-card img{width:100%;aspect-ratio:3/2;object-fit:cover;display:block}
 .cat-body{padding:1rem 1.15rem 1.15rem}
-@media (min-width:640px){.cat-body{padding:1.15rem 1.35rem 1.35rem}}
+@media (min-width:640px){.cat-body{padding:1.15rem 1.35rem 1.35rem}.cat-desc{font-size:.875rem}}
 @media (prefers-reduced-motion:reduce){.cat-card:hover{transform:none}}
 
 .border-wine\/15{border-color:rgba(132,23,42,.15)}
@@ -590,6 +590,8 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 }
 
 /* -------- Visítanos: address / phone / hours -------- */
+.visit-stack{display:grid;gap:1.25rem}
+@media (min-width:640px){.visit-stack{gap:1.75rem}}
 .visit-info{display:grid;gap:1.35rem}
 .visit-info-row dt{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:#8A7A66;margin-bottom:.4rem}
 .visit-info-row dd{margin:0;font-size:1.0625rem;line-height:1.5}
