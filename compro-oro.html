@@ -58,10 +58,26 @@
         <img src="assets/brand/logo-mark.svg" alt="" width="40" height="40" class="w-9 h-9 sm:w-10 sm:h-10 shrink-0">
         <span class="font-serif text-base sm:text-xl tracking-wide leading-none truncate">Compro Oro Azuqueca</span>
       </a>
-      <div class="hidden md:flex gap-10 text-xs tracking-[.18em] text-gray-400 uppercase">
+      <div class="hidden md:flex items-center gap-8 text-xs tracking-[.18em] text-gray-400 uppercase">
         <a href="index.html" class="hover:text-gold transition-colors">Inicio</a>
+        <div class="nav-drop">
+          <button type="button">Qué compramos<svg class="nav-drop-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="nav-drop-panel">
+          <a href="compro-oro.html" class="active">Oro</a>
+          <a href="compro-plata.html">Plata</a>
+          <a href="compro-relojes.html">Relojes</a>
+          <a href="compro-monedas.html">Monedas</a>
+          </div>
+        </div>
         <a href="#faq" class="hover:text-gold transition-colors">Preguntas</a>
-        <a href="index.html#ubicacion" class="hover:text-gold transition-colors">Visítanos</a>
+        <div class="nav-drop">
+          <button type="button">Visítanos<svg class="nav-drop-caret" width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button>
+          <div class="nav-drop-panel">
+          <a href="index.html#ubicacion">Azuqueca de Henares</a>
+          <a href="compro-oro-guadalajara.html">Guadalajara</a>
+          <a href="compro-oro-alcala-de-henares.html">Alcalá de Henares</a>
+          </div>
+        </div>
       </div>
       <a href="https://wa.me/34642602238?text=Hola%2C%20quer%C3%ADa%20una%20tasaci%C3%B3n%20de%20oro%20gratis" target="_blank" rel="noopener"
          class="hidden md:inline-block border border-gold text-gold text-xs font-medium px-6 py-2 uppercase tracking-wider hover:bg-gold hover:text-black transition-colors">
@@ -72,10 +88,18 @@
       </button>
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-gold/10 bg-void/95 backdrop-blur-md">
-      <div class="px-5 py-4 space-y-3 text-sm tracking-[.15em] text-gray-300 uppercase">
+      <div class="px-5 py-4 space-y-1 text-sm tracking-[.15em] text-gray-300 uppercase">
         <a href="index.html" class="block py-2 hover:text-gold transition-colors">Inicio</a>
+        <p class="mnav-label">Qué compramos</p>
+        <a href="compro-oro.html" class="mnav-sub hover:text-gold transition-colors">Oro</a>
+        <a href="compro-plata.html" class="mnav-sub hover:text-gold transition-colors">Plata</a>
+        <a href="compro-relojes.html" class="mnav-sub hover:text-gold transition-colors">Relojes</a>
+        <a href="compro-monedas.html" class="mnav-sub hover:text-gold transition-colors">Monedas</a>
         <a href="#faq" class="block py-2 hover:text-gold transition-colors">Preguntas</a>
-        <a href="index.html#ubicacion" class="block py-2 hover:text-gold transition-colors">Visítanos</a>
+        <p class="mnav-label">Visítanos</p>
+        <a href="index.html#ubicacion" class="mnav-sub hover:text-gold transition-colors">Azuqueca de Henares</a>
+        <a href="compro-oro-guadalajara.html" class="mnav-sub hover:text-gold transition-colors">Guadalajara</a>
+        <a href="compro-oro-alcala-de-henares.html" class="mnav-sub hover:text-gold transition-colors">Alcalá de Henares</a>
         <a href="https://wa.me/34642602238?text=Hola%2C%20quer%C3%ADa%20una%20tasaci%C3%B3n%20de%20oro%20gratis" target="_blank" rel="noopener"
            class="block mt-2 text-center bg-gold text-black font-semibold py-3 normal-case tracking-wider">Valoración gratis</a>
       </div>
@@ -173,9 +197,9 @@
       </div>
       <div class="img-frame img-reveal">
         <picture>
-          <source type="image/webp" srcset="assets/img-20260520-wa0002__mpffgb97mgpy.webp">
-          <img src="assets/img-20260520-wa0002__mpffgb97mgpy.jpg" width="480" height="309"
-               alt="Cartel publicitario de Compro Oro Azuqueca" class="block w-full h-auto" loading="lazy">
+          <source type="image/webp" srcset="assets/img-20260520-wa0001__mpffgb98c9n8.webp">
+          <img src="assets/img-20260520-wa0001__mpffgb98c9n8.jpg" width="2000" height="924"
+               alt="Interior de Compro Oro Azuqueca, zona de tasación" class="block w-full h-auto" loading="lazy">
         </picture>
       </div>
     </div>
@@ -260,15 +284,15 @@
   <!-- FOOTER -->
   <div class="gold-rule"></div>
   <footer class="bg-void-800 border-t border-gold/10 py-10 sm:py-12 px-5 sm:px-6 pb-24 sm:pb-12">
-    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-6">
-      <div class="flex items-center gap-3 sm:gap-4">
-        <img src="assets/brand/logo-mark.svg" alt="" width="52" height="52" class="w-12 h-12 sm:w-14 sm:h-14 shrink-0">
+    <div class="max-w-5xl mx-auto flex flex-col md:flex-row items-center text-center md:text-left justify-between gap-5 sm:gap-6">
+      <div class="flex items-center gap-3.5 sm:gap-4">
+        <img src="assets/brand/logo-mark.svg" alt="" width="52" height="52" class="w-11 h-11 sm:w-14 sm:h-14 shrink-0">
         <div class="text-left">
-          <p class="font-serif text-xl sm:text-2xl text-gold leading-tight">Compro Oro Azuqueca</p>
+          <p class="font-serif text-lg sm:text-2xl text-gold leading-tight">Compro Oro Azuqueca</p>
           <p class="text-xs text-gray-400 mt-1">Blvr. de las Acacias, 6 · Azuqueca de Henares</p>
         </div>
       </div>
-      <div class="flex gap-6 sm:gap-8 text-xs text-gray-400 uppercase tracking-wider">
+      <div class="flex gap-5 sm:gap-8 text-xs text-gray-400 uppercase tracking-wider">
         <a href="tel:+34642602238" class="hover:text-gold transition-colors">+34 642 602 238</a>
         <a href="https://wa.me/34642602238" target="_blank" rel="noopener" class="hover:text-gold transition-colors">WhatsApp</a>
       </div>
