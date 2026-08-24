@@ -254,6 +254,21 @@ body{background:#FAF6EC;color:#1C1712;-webkit-font-smoothing:antialiased}
 @media (min-width:640px){.cat-body{padding:1.15rem 1.35rem 1.35rem}.cat-desc{font-size:.875rem}}
 @media (prefers-reduced-motion:reduce){.cat-card:hover{transform:none}}
 
+/* Five categories should read as one composed set, not a 3+2 grid with an
+   accidental empty slot. The last row is centred on desktop; the fifth card
+   becomes a wider closing card on phones. */
+.category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:639px){
+  .category-grid>.cat-card:last-child{grid-column:span 2;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+  .category-grid>.cat-card:last-child picture{min-height:100%}
+  .category-grid>.cat-card:last-child img{height:100%;aspect-ratio:auto}
+}
+@media(min-width:768px){
+  .category-grid{grid-template-columns:repeat(6,minmax(0,1fr))}
+  .category-grid>.cat-card{grid-column:span 2}
+  .category-grid>.cat-card:nth-child(4){grid-column:2/span 2}
+}
+
 .border-wine\/15{border-color:rgba(132,23,42,.15)}
 .w-8{width:2rem}
 .p-5{padding:1.25rem}
@@ -283,7 +298,7 @@ body{background:#FAF6EC;color:#1C1712;-webkit-font-smoothing:antialiased}
   display:flex;gap:.5rem;
   padding:.75rem 1.25rem;
   overflow-x:auto;-webkit-overflow-scrolling:touch;
-  scrollbar-width:none;
+  scrollbar-width:none;scroll-padding-inline:1.25rem;
 }
 .cat-strip::-webkit-scrollbar{display:none}
 .cat-pill{

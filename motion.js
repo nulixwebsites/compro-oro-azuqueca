@@ -17,6 +17,14 @@
     });
   }
 
+  /* Product navigation: on narrow screens keep the current category centred
+     instead of leaving the active pill clipped at the right edge. */
+  var categoryStrip = document.querySelector('.cat-strip');
+  var activeCategory = categoryStrip && categoryStrip.querySelector('.cat-pill.active');
+  if (categoryStrip && activeCategory && categoryStrip.scrollWidth > categoryStrip.clientWidth) {
+    categoryStrip.scrollLeft = activeCategory.offsetLeft - (categoryStrip.clientWidth - activeCategory.offsetWidth) / 2;
+  }
+
   /* Motion: scroll reveals */
   var prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if (!prefersReduced) {
