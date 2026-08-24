@@ -648,7 +648,7 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 .footer-grid{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.75rem 1.5rem}
 .footer-brand{grid-column:1/-1;max-width:31rem}
 .footer-brand-lockup{display:flex;align-items:center;gap:.9rem;width:max-content;max-width:100%}
-.footer-brand-lockup img{width:3.25rem;height:3.25rem;flex:none}
+.footer-brand-lockup img{width:18rem;height:auto;max-width:100%;flex:none}
 .footer-brand-lockup span{font-size:1.6rem;line-height:1}
 .footer-brand-copy{font-size:.875rem;line-height:1.7;color:#9c9185;margin-top:1.25rem;max-width:29rem}
 .footer-rating{display:inline-flex;align-items:center;gap:.7rem;margin-top:1.2rem;font-size:.75rem;color:#b9aea0}
@@ -680,6 +680,15 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
   .footer-brand{grid-column:1/span 2}
   .footer-contact{grid-column:3/span 2}
   .footer-bottom{flex-direction:row;justify-content:space-between;align-items:center}
+}
+
+/* The full lockup needs a deliberate mobile width. The previous 19rem
+   intrinsic width competed with the menu button and could force the nav
+   past the viewport on narrow phones. */
+.site-nav-logo{width:19rem;height:auto;max-width:100%;display:block}
+@media (max-width:639px){
+  .site-nav-logo{width:min(13rem,calc(100vw - 6rem))}
+  .footer-brand-lockup{width:100%}
 }
 
 /* ============================================================
