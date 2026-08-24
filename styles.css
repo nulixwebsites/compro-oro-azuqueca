@@ -823,6 +823,7 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
   .zone-page #proceso .grid.sm\:grid-cols-3{gap:0;border-top:1px solid rgba(198,145,46,.16);border-bottom:1px solid rgba(198,145,46,.16)}
   .zone-page #proceso .grid.sm\:grid-cols-3>div{padding:2rem;border-left:1px solid rgba(198,145,46,.16)}
   .zone-page #proceso .grid.sm\:grid-cols-3>div:first-child{padding-left:0;border-left:0}
+  .zone-page #proceso .grid.sm\:grid-cols-3 .text-wine{color:#C6912E}
   .zone-page #faq>.max-w-5xl{display:grid;grid-template-columns:20rem minmax(0,1fr);column-gap:5rem;align-items:start}
   .zone-page #faq .section-head{margin:0}
   .zone-page #faq .faq-list{max-width:none}
