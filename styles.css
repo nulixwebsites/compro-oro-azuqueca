@@ -601,6 +601,23 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 .nav-drop-panel a:hover,.nav-drop-panel a:focus-visible{background:rgba(198,145,46,.12);color:#C6912E;outline:none}
 .nav-drop-panel a.active{color:#C6912E}
 
+/* Primary navigation: one continuous, legible path through the site. */
+.site-nav-links .nav-link,.site-nav-links .nav-drop>button{position:relative;padding:.45rem 0}
+.site-nav-links .nav-link::after,.site-nav-links .nav-drop>button::after{
+  content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:#C6912E;
+  transform:scaleX(0);transform-origin:left;transition:transform .2s cubic-bezier(.16,1,.3,1);
+}
+.site-nav-links .nav-link:hover::after,.site-nav-links .nav-link:focus-visible::after,
+.site-nav-links .nav-drop:hover>button::after,.site-nav-links .nav-drop:focus-within>button::after{transform:scaleX(1)}
+.home-page .site-nav-links .nav-home,.product-page .site-nav-links .nav-buy>button,.zone-page .site-nav-links .nav-visit>button{color:#DDAE55}
+.home-page .site-nav-links .nav-home::after,.product-page .site-nav-links .nav-buy>button::after,.zone-page .site-nav-links .nav-visit>button::after{transform:scaleX(1)}
+
+@media (min-width:768px) and (max-width:1199px){
+  .site-nav-links{gap:1.1rem}
+  .site-nav-links .nav-process{display:none}
+  nav.fixed>a,nav.fixed .hidden.md\:inline-block{padding-left:1rem;padding-right:1rem}
+}
+
 /* -------- mobile menu: grouped sub-links under a dropdown label -------- */
 .mnav-label{padding:.85rem 0 .3rem;font-size:.68rem;letter-spacing:.14em;color:#8A7A66}
 .mnav-sub{display:block;padding:.5rem 0 .5rem .9rem;border-left:1px solid rgba(198,145,46,.18);margin-left:.15rem}
@@ -636,8 +653,12 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
   .section-pad{padding-top:5.25rem;padding-bottom:5.25rem}
   .section-head{margin-bottom:2.75rem}
   .fluid-display{letter-spacing:-.025em}
-  nav.fixed>.max-w-5xl{height:4.5rem}
-  nav.fixed .text-xs{font-size:.6875rem}
+  nav.fixed{background:rgba(20,16,13,.94);box-shadow:0 8px 30px rgba(0,0,0,.12)}
+  nav.fixed>.max-w-5xl{height:4.75rem}
+  nav.fixed .site-nav-links{gap:1.65rem;letter-spacing:.13em}
+  nav.fixed .site-nav-links,.site-nav-links .nav-drop>button{font-size:.6875rem}
+  nav.fixed>.max-w-5xl>a:first-child span{font-size:1.42rem}
+  nav.fixed>.max-w-5xl>a:last-of-type{padding:.7rem 1.25rem;font-size:.67rem;letter-spacing:.1em}
   .sticky-wa{width:50px;height:50px;right:30px;bottom:30px}
 
   /* Homepage: compact split hero with copy and photography sharing a frame */
