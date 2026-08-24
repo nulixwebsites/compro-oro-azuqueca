@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 104" role="img" aria-labelledby="title desc">
+  <title id="title">Compro Oro Azuqueca</title>
+  <desc id="desc">Eclipse CO junto al nombre Compro Oro Azuqueca.</desc>
+  <g transform="translate(2 4) scale(.1875)">
+    <circle cx="256" cy="256" r="242" fill="#14100D"/>
+    <path d="M256 14a242 242 0 0 1 242 242" fill="none" stroke="#DDAE55" stroke-width="13"/>
+    <path d="M498 256a242 242 0 0 1-242 242" fill="none" stroke="#6E101E" stroke-width="13"/>
+    <path d="M256 40a216 216 0 0 0-205 148M51 324a216 216 0 0 0 205 148" fill="none" stroke="#DDAE55" stroke-width="3"/>
+    <g fill="#DDAE55"><path d="M256 70c-17 20-17 37 0 57 17-20 17-37 0-57Z"/><path d="M249 110c-18-17-36-14-41 4 14-6 24 1 38 17l10 22 10-22c14-16 24-23 38-17-5-18-23-21-41-4 2-11-1-21-7-31-6 10-9 20-7 31Z"/></g>
+    <g transform="translate(42 66) scale(.27)" fill="#FFF3DE" stroke="#FFF3DE" stroke-width="9"><path fill-rule="evenodd" clip-rule="evenodd" d="M1092 1160.51C1037 1160.51 803.197 1122.91 799.997 874.513C796.797 626.113 985 555.5 1092 555.5C1198.99 555.5 1375.8 619.713 1379 874.513C1382.2 1129.31 1147 1160.51 1092 1160.51ZM898 874.513C898 1080.03 1003.49 1133 1092 1133C1180.5 1133 1283.5 1059.5 1283.5 874.513C1283.5 672.5 1200 587 1092 587C983.995 587 898 669 898 874.513Z"/><path d="M616 552.5C738.4 548.9 785.167 641.667 794.5 690V561.5L775.5 568.5C623.5 494.1 504.333 536.667 453 561.5C401.667 586.333 296 650.8 296 836C296 1103.5 496.5 1142.5 593.5 1150.5C671.1 1156.9 759.834 1121.83 794.5 1103.5V1023.5C785.167 1061 725 1113.5 604.5 1113.5C463.277 1113.5 413 946.5 413 836C413 716.668 463 557 616 552.5Z"/></g>
+  </g>
+  <text x="112" y="49" fill="#FFFDF9" font-family="Georgia,serif" font-size="27" font-weight="400">Compro Oro</text>
+  <text x="114" y="76" fill="#DDAE55" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="4">AZUQUECA</text>
+</svg>
