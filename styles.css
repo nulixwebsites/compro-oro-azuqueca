@@ -639,6 +639,49 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
 .visit-hours span:nth-child(odd){min-width:7.5rem}
 .visit-hours span:nth-child(even){font-variant-numeric:tabular-nums}
 
+/* Complete site footer: services, service area and practical visit details. */
+.site-footer{position:relative;overflow:hidden;padding-top:4rem;color:#b9aea0}
+.site-footer::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(60% 110% at 0 0,rgba(198,145,46,.08),transparent 58%);
+}
+.footer-grid{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2.75rem 1.5rem}
+.footer-brand{grid-column:1/-1;max-width:31rem}
+.footer-brand-lockup{display:flex;align-items:center;gap:.9rem;width:max-content;max-width:100%}
+.footer-brand-lockup img{width:3.25rem;height:3.25rem;flex:none}
+.footer-brand-lockup span{font-size:1.6rem;line-height:1}
+.footer-brand-copy{font-size:.875rem;line-height:1.7;color:#9c9185;margin-top:1.25rem;max-width:29rem}
+.footer-rating{display:inline-flex;align-items:center;gap:.7rem;margin-top:1.2rem;font-size:.75rem;color:#b9aea0}
+.footer-rating .stars{font-size:.72rem;letter-spacing:1px}
+.footer-rating strong{color:#fff;font-weight:600}
+.footer-heading{font-size:.67rem;line-height:1.2;letter-spacing:.17em;text-transform:uppercase;color:#C6912E;font-weight:700;margin-bottom:1.15rem}
+.footer-column>a:not(.footer-phone){display:block;width:max-content;max-width:100%;font-size:.82rem;color:#b9aea0;margin-top:.72rem;transition:color .15s}
+.footer-column>a:hover,.footer-column>a:focus-visible{color:#DDAE55}
+.footer-distance{font-size:.74rem;line-height:1.55;color:#786f65;margin-top:1.2rem;max-width:13rem}
+.footer-contact address{font-style:normal;font-size:.82rem;line-height:1.55;color:#b9aea0}
+.footer-contact address span{display:block}
+.footer-phone{display:inline-block;margin-top:.8rem;color:#fff;font-size:1rem;font-weight:600}
+.footer-hours{display:grid;grid-template-columns:auto 1fr;gap:.35rem .8rem;margin-top:1rem;font-size:.7rem;line-height:1.4}
+.footer-hours span{color:#786f65}.footer-hours b{color:#b9aea0;font-weight:500;font-variant-numeric:tabular-nums}
+.footer-actions{display:grid;grid-template-columns:1fr 1fr;gap:.55rem;margin-top:1.2rem;max-width:19rem}
+.footer-actions a{border:1px solid rgba(198,145,46,.35);padding:.7rem .8rem;text-align:center;color:#C6912E;font-size:.67rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;transition:background .15s,color .15s,border-color .15s}
+.footer-actions a:first-child{background:#C6912E;color:#14100D;border-color:#C6912E}
+.footer-actions a:hover{background:#DDAE55;color:#14100D;border-color:#DDAE55}
+.footer-bottom{position:relative;display:flex;flex-direction:column;gap:.65rem;margin-top:3rem;padding-top:1.4rem;border-top:1px solid rgba(198,145,46,.12);font-size:.66rem;line-height:1.5;color:#71685f}
+.footer-bottom a{color:#9c9185}.footer-bottom a:hover{color:#DDAE55}
+@media(max-width:639px){
+  .site-footer{padding-top:3.25rem}
+  .footer-column{min-width:0}
+  .footer-contact{grid-column:1/-1}
+  .footer-bottom{padding-bottom:0}
+}
+@media(min-width:640px){
+  .footer-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:3rem 2rem}
+  .footer-brand{grid-column:1/span 2}
+  .footer-contact{grid-column:3/span 2}
+  .footer-bottom{flex-direction:row;justify-content:space-between;align-items:center}
+}
+
 /* ============================================================
    DESKTOP EDITORIAL PASS (2026-08-24)
    Mobile remains intentionally unchanged. At desktop widths the site uses
@@ -851,7 +894,12 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
   .zone-page #ubicacion .grid{grid-template-columns:.78fr 1.22fr;gap:5rem}
   .zone-page #ubicacion .md\:h-96{height:22rem}
 
-  /* Shared footer: quieter and denser on a wide screen */
-  footer{padding-top:2.5rem!important;padding-bottom:2.5rem!important}
-  footer>.max-w-5xl:last-child{margin-top:1.75rem;padding-top:1.25rem}
+  /* Shared footer: a complete but quiet closing frame */
+  .site-footer{padding-top:4.5rem!important;padding-bottom:2.25rem!important}
+  .site-footer .footer-grid{grid-template-columns:repeat(12,minmax(0,1fr));gap:3rem}
+  .site-footer .footer-brand{grid-column:1/span 4;padding-right:2rem}
+  .site-footer .footer-grid>.footer-column:nth-child(2){grid-column:5/span 2}
+  .site-footer .footer-grid>.footer-column:nth-child(3){grid-column:7/span 2}
+  .site-footer .footer-contact{grid-column:9/span 4;padding-left:1rem}
+  .site-footer .footer-bottom{margin-top:3.5rem;padding-top:1.35rem}
 }
