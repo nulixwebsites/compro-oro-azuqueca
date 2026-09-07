@@ -912,3 +912,29 @@ body.motion-ready .img-reveal.is-visible{opacity:1;transform:none}
   .site-footer .footer-contact{grid-column:9/span 4;padding-left:1rem}
   .site-footer .footer-bottom{margin-top:3.5rem;padding-top:1.35rem}
 }
+
+/* --- Cookie / analytics consent (Microsoft Clarity) --- */
+.footer-cookie-btn{background:none;border:0;padding:0;font:inherit;font-size:inherit;color:inherit;text-decoration:underline;cursor:pointer;text-align:left}
+.footer-cookie-btn:hover{color:#C6912E}
+.cookies-aside-nav{margin-top:.5rem}
+.cookies-aside-nav a:hover{color:#1C1712}
+.cookies-grid{display:grid;grid-template-columns:1fr}
+@media(min-width:768px){
+  .cookies-aside{position:sticky;top:6rem}
+  .cookies-grid{grid-template-columns:220px 1fr}
+}
+body.has-cookie-banner{padding-bottom:160px;background:#1B1611}
+@media(max-width:480px){body.has-cookie-banner{padding-bottom:220px}}
+body.has-cookie-banner .sticky-wa{display:none}
+#cookie-consent{position:fixed;left:16px;right:16px;bottom:16px;z-index:500;max-width:640px;margin:0 auto;background:#14100D;color:#FAF6EC;border:1px solid rgba(198,145,46,.4);border-radius:4px;padding:18px 20px;box-shadow:0 12px 34px rgba(0,0,0,.35);font-size:14px;line-height:1.55;opacity:0;transform:translateY(16px);transition:opacity .3s ease,transform .3s ease}
+#cookie-consent.is-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){#cookie-consent{transition:none}}
+#cookie-consent p{margin:0 0 14px}
+#cookie-consent a{color:#DDAE55;text-decoration:underline}
+#cookie-consent .cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
+#cookie-consent button{border-radius:2px;padding:9px 18px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:.05em;cursor:pointer;border:1px solid transparent;transition:.2s}
+#cookie-consent button[data-action="accept"]{background:#C6912E;color:#14100D}
+#cookie-consent button[data-action="accept"]:hover{background:#DDAE55}
+#cookie-consent button[data-action="deny"]{background:transparent;border-color:rgba(250,246,236,.35);color:#FAF6EC}
+#cookie-consent button[data-action="deny"]:hover{border-color:#FAF6EC}
+@media(max-width:480px){#cookie-consent{left:10px;right:10px;bottom:10px;padding:16px}}
